@@ -1,0 +1,8 @@
+[book]
+title = "HHS Student Handbook"
+language = "en"
+src = "pages"
+
+[output.html]
+default-theme = "rust"
+curly-quotes = true
