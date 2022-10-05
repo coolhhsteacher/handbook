@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>HHS Student Handbook</title>
+        <meta name="robots" content="noindex" />
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Student Handbook</a></li><li class="chapter-item expanded affix "><li class="part-title">Introduction</li><li class="chapter-item expanded "><a href="introduction/principal_message.html"><strong aria-hidden="true">1.</strong> Principal's Message</a></li><li class="chapter-item expanded "><a href="introduction/core_values.html"><strong aria-hidden="true">2.</strong> Core Values</a></li><li class="chapter-item expanded "><a href="introduction/expectations_for_learning.html"><strong aria-hidden="true">3.</strong> Expectations for Learning</a></li><li class="chapter-item expanded "><a href="introduction/parent_responsibilities.html"><strong aria-hidden="true">4.</strong> Statement on Parent Responsibilities</a></li><li class="chapter-item expanded affix "><li class="part-title">Activities and Organizations</li><li class="chapter-item expanded affix "><li class="part-title">Facilities and Services</li><li class="chapter-item expanded affix "><li class="part-title">Academic Policies</li><li class="chapter-item expanded affix "><li class="part-title">Attendance Policies</li><li class="chapter-item expanded affix "><li class="part-title">Student Conduct</li><li class="chapter-item expanded affix "><li class="part-title">Other Rules and Procedures</li><li class="chapter-item expanded affix "><li class="part-title">Public Safety</li><li class="chapter-item expanded affix "><li class="part-title">Staff Communication</li><li class="chapter-item expanded affix "><li class="part-title">Code for Student Conduct</li><li class="chapter-item expanded "><a href="code_for_conduct/basic_guidelines.html"><strong aria-hidden="true">5.</strong> Basic Guidelines</a></li><li class="chapter-item expanded "><a href="code_for_conduct/detention.html"><strong aria-hidden="true">6.</strong> Detention</a></li><li class="chapter-item expanded "><a href="code_for_conduct/student_discipline.html"><strong aria-hidden="true">7.</strong> Student Discipline</a></li><li class="chapter-item expanded "><a href="code_for_conduct/disciplinary_procedures.html"><strong aria-hidden="true">8.</strong> Disciplinary Procedures</a></li><li class="chapter-item expanded "><a href="code_for_conduct/suspension.html"><strong aria-hidden="true">9.</strong> Suspension</a></li><li class="chapter-item expanded "><a href="code_for_conduct/in_school_suspension.html"><strong aria-hidden="true">10.</strong> In-School Suspension</a></li><li class="chapter-item expanded affix "><li class="part-title">Academic Calendar</li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">HHS Student Handbook</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <div align="center">
+<img src="https://www.haverhill-ps.org/files/HPS-Logo.png" width="128" height="128">
+<h1 id="haverhill-high-school"><a class="header" href="#haverhill-high-school">Haverhill High School</a></h1>
+<img src="https://hhs.haverhill-ps.org/wp-content/uploads/sites/31/2019/10/haverhill1.jpg" width="500" height="375">
+<h1 id="student-handbook2021-2022"><a class="header" href="#student-handbook2021-2022">Student Handbook<br>2021-2022</a></h1>
+<p><b>Haverhill High School</b><br>137 Monument Street<br>Haverhill, MA 01832</p>
+</div>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="principals-message"><a class="header" href="#principals-message">Principal’s Message</a></h1>
+<p><em>To Haverhill High School Students, Parents, and Guardians:</em></p>
+<p>Welcome to Haverhill High School! I’m thrilled to begin this exciting school year with our new and returning
+students, and I look forward to working with each one of you to find success on your journey at Haverhill High
+School during the 2021-22 school year.</p>
+<p>Haverhill High School’s mission is to ensure that each learner meets or exceeds rigorous academic standards to
+become a citizen with the skills necessary to solve problems and meet 21st century academic, social, and civic
+expectations. Creating a culture that celebrates individual success is imperative for engaging all scholars in
+accessible, equitable, and meaningful learning experiences. As Hillies, we value inclusivity, achievement, and
+authentic learning that promotes pride in ourselves and in our community. Our main goal is to ensure that each
+student develops integrity, motivation, and self-confidence to succeed in the global community. In order to achieve
+this mission, it is important that we share a commitment to a common set of expectations.</p>
+<p>This Student Handbook contains rights, responsibilities, rules, and procedures that govern the operation of Haverhill
+High School. While this document is intended to be comprehensive, it is difficult to predict every scenario that
+might arise during a school year. The school administration, faculty, and staff will use their judgment and discretion
+in the operation of our school, guided by the policies, procedures, and spirit outlined in this handbook.
+Knowing the contents of the Student Handbook is your responsibility as a student at Haverhill High School. It is
+crucial that you comply with the safety procedures and academic and behavioral expectations outlined in this
+handbook. In order to fulfill our mission and the expectations of our school by the Commonwealth of Massachusetts
+and the City of Haverhill, a safe, orderly, and welcoming school environment will be necessary. Creating this
+environment requires the efforts of every member of our community - our families, staff, faculty, administration and,
+most importantly, our students.</p>
+<p>As we return all Hillie students to school after two years of disrupted learning due to the COVID-19 pandemic, we
+are focused on ensuring that our students are present at school every day. Attendance is a key indicator of success in
+high school, graduation, and preparation for life after high school. This means consistently complying with our
+COVID-19 health and safety measures, getting to school and to every class on time, and reaching out to your
+teachers immediately if you must be away from class.</p>
+<p>Beyond our rich academic offerings, Haverhill High School offers a wide variety of clubs, activities, student
+leadership organizations, and athletic teams. These extra-curricular opportunities are governed by the rules and
+procedures outlined in this handbook, and it is expected that all students who participate in these activities comply
+with the expectations as laid out in the handbook.</p>
+<p>I expect you to always try your best, work hard, and get involved in our community. Take advantage of the
+wonderful opportunities our school has to offer. Meet the expectations of our school, and model what it means to be
+a Hillie - to be global, responsible, engaged, accepting, and tenacious.</p>
+<p>I wish you a school year full of deep learning and engagement. I can’t wait to learn alongside you.
+Go Hillies!</p>
+<p>Sincerely,</p>
+<p><em>[I don’t feel like getting the signature from the PDF. smh.]</em></p>
+<p>Jason Meland<br />
+Principal</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="core-values"><a class="header" href="#core-values">Core Values</a></h1>
+<ul>
+<li>global</li>
+<li>responsible</li>
+<li>engaged</li>
+<li>accepting</li>
+<li>tenacious</li>
+</ul>
+<p>we’re great</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="expectations-for-learning"><a class="header" href="#expectations-for-learning">Expectations for Learning</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="statement-on-parent-responsibilities"><a class="header" href="#statement-on-parent-responsibilities">Statement on Parent Responsibilities</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="basic-guidelines"><a class="header" href="#basic-guidelines">Basic Guidelines</a></h1>
+<ol>
+<li>Normal procedures at Haverhill High School involve teachers, parents, administrators and other staff members.</li>
+<li>All staff members are encouraged and expected to resolve minor conflicts and minor violations of rules when and where they occur.</li>
+<li>Except for trivial incidents, parents are to be informed of violations as soon as possible.</li>
+<li>Parents are to be informed as soon as a pattern of inappropriate behavior occurs.</li>
+<li>All applicable procedures and school rules are in force off school grounds during school sponsored activities.</li>
+<li>Each school adult is responsible for bringing misconduct to the attention of students and, if appropriate, parents/guardians. If a conference alone does not or will not resolve the issue, a disciplinary referral will be made.</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="detention"><a class="header" href="#detention">Detention</a></h1>
+<ol>
+<li>Each professional and paraprofessional staff member is authorized to detain students after school. Teacher detention is up to 15 minutes, office detention is 50 minutes.</li>
+<li>A detention may be imposed on the day of the infraction if the staff member is satisfied that the student does not have an important prior commitment or transportation problem. Student employment, athletics or other club activities are not acceptable reasons for missing detentions.</li>
+<li>In case of such a problem, the detention may be imposed for next school day. The student shares responsibility for informing parents or guardians regarding detention(s).</li>
+<li>Parents or guardians are responsible for providing, if necessary, transportation from school.</li>
+<li>The duration of each detention is at the reasonable discretion of the staff member (within a 60 minute limit). Office detentions are 50 minutes.</li>
+<li>After-school activities or athletics will not be participated in until detentions are served.</li>
+<li>Failure to report for detention or arrange for an approved deferral may result in additional detentions or suspension from school.</li>
+<li>The second and subsequent incident of a student failing to report for detention or arrange for an approved deferral may result in time in the Educational Responsibility Center, or ERC.</li>
+<li>If appropriate, parents will be informed of detentions served or to be served.</li>
+<li>Disruption of the detention room may result in a second day of detention or In School Suspension or, if the situation necessitates, Out of School Suspension.</li>
+<li>Students may be denied parking privileges until assigned detentions are served.</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="student-discipline"><a class="header" href="#student-discipline">Student Discipline</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="disciplinary-procedures"><a class="header" href="#disciplinary-procedures">Disciplinary Procedures</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="suspension"><a class="header" href="#suspension">Suspension</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="in-school-suspension"><a class="header" href="#in-school-suspension">In-School Suspension</a></h1>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+    </body>
+</html>
