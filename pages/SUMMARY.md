@@ -15,6 +15,8 @@
 
 # Academic Policies
 
+- [Internet Use Policy](academic_policies/internet_use.md)
+
 # Attendance Policies
 
 # Student Conduct
