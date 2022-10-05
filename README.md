@@ -2,7 +2,7 @@
 
 This is a demonstration of how a collaborative student handbook project could work. General information regarding the project would probably go here.
 
-*[url here]*
+[https://coolhhsteacher.github.io/handbook/](https://coolhhsteacher.github.io/handbook/)
 
 ## Contributing
 
