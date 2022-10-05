@@ -1,0 +1,5 @@
+- establish guidelines
+- provide basic instructions for contributing
+- provide useful resources (e.g. a link to the "real" handbook)
+- explain the overall process of fork-commit-pr-merge (or branch-commit-pr-merge)
+- etc.
